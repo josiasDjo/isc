@@ -6,8 +6,8 @@
     text-decoration: none;
 }
 body {
-    min-height: 100vh;
-    min-width: 395px;
+    /* min-height: 100vh;*/
+    min-width: 430px; 
     user-select: none;
 }
 #entete {
@@ -247,10 +247,17 @@ footer .footerCont ul li {
     } 
     #entete label {
         display: none;
-    } 
+    }
+    .filiereL .tof1FiliereL {
+        /* width: 120px; */
+    }
 }
 @media screen and (max-width: 450px) {
     .filiereL {
-        padding: 15px ;
+        padding: 5px ;
+    }
+    .filiereL img {
+        padding: 0;
+        margin:10px;
     }
 }
