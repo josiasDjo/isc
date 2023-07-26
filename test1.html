@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test1.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="div1">
+            <ul id="navBarre" class="Nav">
+                <li><a href="index.html">ACCUEIL</a></li>
+                    
+                <li><a href="">APERCU</a>  
+                    <ul id="submenu">
+                        <li><a href="#">Organisation de l'ISC</a></li>
+                        <li><a href="#">Historique</a></li>
+                        <li><a href="#">Galerie</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="">FORMATION</a>
+                    <ul id="submenu">
+                        <li><a href="#">Nos filières LMD</a></li>
+                        <li><a href="#">Nos filières Ancien Système</a></li>
+                        <li><a href="page_inscris.html">Inscription en ligne</li>
+                        <li><a href="connexion.html">Se connecter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">A PROPOS</a>
+                    <ul id="submenu">
+                        <li><a href="#">A propos de nous</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <button onclick="myFunction();">menu</button>
+    </header>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navBarre");
+            if (x.className == "Nav") {
+                x.className += "responsive";
+            } else {
+                x.className = "Nav"; 
+            }
+        }
+    </script>
+</body>
+</html>

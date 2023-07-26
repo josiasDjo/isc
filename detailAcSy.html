@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Photo/Untitled-1.ico"/>
+    <link rel="stylesheet" href="detailMaster.css">
+    <title>ISC GOMA</title>
+</head>
+<body>
+    <header>
+        
+        <div id="div1">
+            <img class="logo1" src="Photo/Untitled-1.png" >
+            <p class="grosTitre">ISC GOMA</p>
+            <label for="menubar" onclick="myFunction()"><img src="Photo/list.png" width="50px " height="50px"></label>
+            <input id="menubar" type="checkbox">
+        </div>
+        
+        <nav class="navbar" id="test1">
+
+            <ul class="listBarre" id="listBar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">INSTITUTION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="organisation.html">Organisation de l'ISC</a></li>
+                        <li><a href="histo.html">Historique</a></li>
+                        <li><a href="#">Galerie</a></li><br>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FORMATION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="detail.html">Nos filières LMD</a></li>
+                        <li><a href="detailAcSy.html">Nos filières Ancien système</a></li>
+                        <li><a href="inscription.html">Inscription en ligne</li>
+                        <li><a href="connexion.html">Connexion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a>
+                    <ul>
+                        <li><a href="#">A PROPOS DE NOUS</a></li>
+                        <li><a href="about.html">REALISATEUR</a></li>
+                    </ul>
+                </li>
+            </ul>        
+        </nav>
+        </nav>
+    </header>
+
+    <div class="pub">
+        <h3>LES FILIERES ORGANISEES (Ancien système)</h3>
+      <p>Pour répondre aux objectifs lui assignés par l’Etat, l’ISC-Goma a organisé les 
+        filières ci-après pour l'ancien système :
+      <br>
+      <ul class="liste1">
+        <li> .Les sciences commerciales et financières<br></li>
+        <li>.La gestion informatique : <br></li>
+      </ul>
+      
+      Dans ses objectifs éducationnels, l’ISC-Goma offre aux finalistes de l’enseignement 
+      secondaire la possibilité de se former en sciences commerciales, gestion informatique 
+      au niveau de graduat et de la licence agréée par l’arrêté n°022/MINESU/CABMIN/FL/RS/2007 du 29 janvier 2007.
+      C’est pourquoi l’étudiant reçoit une formation lui permettant d’être utile à 
+      lui-même par ses initiatives et à la société. Les sections de l’ISC-Goma sont 
+      reparties de la manière suivante :<br>
+      <ul class="liste2"> 
+        <li> Sciences commerciales et financières avec trois options au niveau du cycle 
+            de graduat :  
+              <br></li>
+            <ul class="liste3">
+                <li>comptabilité;</li>
+                <li>douanes et accises;</li>
+                <li>marketing.</li>
+            </ul>
+
+            <ul class="liste4">
+                <p> Et au niveau de licence :</p>
+                <li>comptabilité;</li>
+                <li>marketing et</li>
+                <li>fiscalité.</li>
+            </ul>
+        <li>Gestion informatique au niveau de graduat et de la licence avec comme option : 
+            la gestion informatique et la conception des systèmes d'Information agréée par 
+            l’arrêté <b>n°002/MINESU/CABMIN/FL/RS/2007 du 2007 du 29/01/2007.</b></li>
+      </ul>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test1");
+            if (x.className === "navbar") {
+                x.className += "responsive";
+            } else {
+                x.className = "navbar"; 
+            }
+        }
+    </script> 
+</body>
+<footer>
+    <div class="footerCont">
+        <p>A PROPOS DE NOUS </p><br>
+        <label>L’Institut Supérieur de Commerce de Goma est un établissement public d’enseignement supérieur.<br>
+            Il a été créé comme extension de <b>l’ISC-Kisangani</b> par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0059/92</b> du 10 mars 1992 portant création des extensions des établissements 
+            de l’enseignement supérieur et universitaire.<br>
+            Cette décision a été prise dans le cadre de la politique d’essaimage des établissements 
+            de l’ESU préconisé par la conférence nationale souveraine. 
+            <br>Les cours ont commencé en 1993 sous la direction du Professeur 
+            <b>RURIHO KIBAMBASI Freddy</b> d’abord, et l’ASS. <b>KALIMUMBALU</b> ensuite, 
+            <b>le 30/04/1994.</b> <br>L’ISC-Goma est devenu autonome par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0584/94.</b>
+                       </label> <br>
+    </div>
+
+    <div class="footerCont">
+        <p>NOS SERVICES </p><hr>
+        <ul>
+            <li>Secrétaire Général Académique</li><hr>
+            <li>LABO INFO</li><hr>
+            <li>APPARITORAT</li><hr>
+        </ul>
+    </div>
+
+    <div class="footerCont">
+        <p>CONTACTEZ-NOUS</p>
+        <label>140, Av.Les écoles, Les Volcans, Nord-Kivu/RDC</label><br>
+        <label>Tél</label><br>
+        <label>Tél</label><br>
+        <label><a href="www.iscgoma.net">www.iscgoma.net</a></label><br>
+    </div>
+    
+</footer>
+</html>

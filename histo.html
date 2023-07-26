@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Photo/Untitled-1.ico"/>
+    <link rel="stylesheet" href="histo.css">
+    <title>ISC GOMA</title>
+</head>
+<body>
+    <header>
+        
+        <div id="div1">
+            <img class="logo1" src="Photo/Untitled-1.png" >
+            <p class="grosTitre">ISC GOMA</p>
+            <label for="menubar" onclick="myFunction()"><img src="Photo/list.png" width="50px " height="50px"></label>
+            <input id="menubar" type="checkbox">
+        </div>
+        
+        <nav class="navbar" id="test1">
+
+            <ul class="listBarre" id="listBar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">INSTITUTION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="organisation.html">Organisation de l'ISC</a></li>
+                        <li><a href="histo.html">Historique</a></li>
+                        <li><a href="#">Galerie</a></li><br>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FORMATION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="detail.html">Nos filières LMD</a></li>
+                        <li><a href="detailAcSy.html">Nos filières Ancien système</a></li>
+                        <li><a href="inscription.html">Inscription en ligne</li>
+                        <li><a href="connexion.html">Connexion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a>
+                    <ul>
+                        <li><a href="#">A PROPOS DE NOUS</a></li>
+                        <li><a href="about.html">REALISATEUR</a></li>
+                    </ul>
+                </li>
+            </ul>        
+        </nav>
+        </nav>
+    </header>
+    <div class="history">
+        <h1>HISTORIQUE </h1>
+        <ul class="liste1">
+            <li>Création de l'ISC-GOMA
+                <p>L’Institut Supérieur de Commerce de Goma est un établissement public d’enseignement supérieur.<br>
+                    Il a été créé comme extension de <b>l’ISC-Kisangani</b> par l’arrêté ministériel <b>N° ESU/CABMIN/0059/92</b> du 10 mars 1992 portant création des extensions des établissements de l’enseignement supérieur et universitaire.<br>
+                    Cette décision a été prise dans le cadre de la politique d’essaimage des établissements de l’ESU 
+                    préconisé par la conférence nationale souveraine. <br>Les cours ont commencé en 1993 sous la direction
+                    du Professeur <b>RURIHO KIBAMBASI Freddy</b> d’abord, et l’ASS. <b>KALIMUMBALU</b> ensuite, 
+                    <b>le 30/04/1994.</b> <br>L’ISC-Goma est devenu autonome par l’arrêté ministériel 
+                    <b>N° ESU/CABMIN/0584/94.</b>
+                </p> <br>
+            </li>
+            <li>OBJECTIFS INSTITUTIONNELS
+                <p><b>L’ISC-Goma</b> poursuit les objectifs assignés aux 
+                instituts supérieurs, techniques par la décision d’état N°09/CC/81 du 09/06/1981 renforcé 
+                par l’ordonnance loi N° 81-025 de la 31/10/1981 portant organisation générale de l’enseignement 
+                supérieur et universitaire.
+                Ainsi, il forme des cadres compétents dont la technicité élevée contribue au <b>développement 
+                    du pays</b>.<br>
+                Il organise la recherche scientifique permettant de résoudre des problèmes spécifiques grâce à 
+                son caractère. Il forme des bons citoyens honnêtes et patriotes.<br>
+                Bref, il fournit au pays et au monde des techniciens de haut niveau et aux qualités morales 
+                très éprouvées.<br>
+                En plus, l’ISC-Goma avec les filières et options organisées en son sein a pour finalité de :
+                </li>
+                <ul class="liste2">
+                    <li>Former des cadres hautement qualifiés en sciences commerciales et financières capables de 
+                    concevoir, d’organiser et d’administrer les finances d’une entreprise publique et/ou promouvoir 
+                    et coordonner les activités commerciales des entreprises tant commerciales, privées que 
+                    publiques ;</li>
+                    <br>
+                    <li>Former des cadres capables de conduire des travaux d’audit et d’expertise comptable dans les 
+                    entreprises commerciales (Sociétaires ou individuelles), publiques et dans des projets de 
+                    développement ;</li>
+                    <br>
+                    <li>Former des consultants et conseillers en matière de la gestion fiscale des entreprises tant 
+                    privées que publiques ;</li>
+                    <br>
+                    <li>Former des marketers spécialisés dans des stratégies de marchés dans le but d’améliorer le 
+                    rendement des entreprises qui utiliseront le cadre des produits à l’ISC-Goma ;</li>
+                    <br>
+                    <li>Former des experts et consultants informaticiens dans le domaine de conception de programme 
+                    et d’automatisation des systèmes de gestion des entreprises et la maintenance des outils 
+                    informatiques, des formations et des spécialisation en informatique de gestion ;</li>
+                    <br>
+                    <li>Former des professionnels de terrain dans le domaine de finance, du marketing et de 
+                    l’informatique ;</li>
+                    <br>
+                    <li>Former des cadres qualifiés et spécialisés en matières et techniques douanières capables 
+                    d’organiser, administrer et contrôler les finances dans les services générateurs des recettes 
+                    de l’Etat.</li>
+                </ul>
+                <br>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test1");
+            if (x.className === "navbar") {
+                x.className += "responsive";
+            } else {
+                x.className = "navbar"; 
+            }
+        }
+    </script> 
+</body>
+<footer>
+    <div class="footerCont">
+        <p>A PROPOS DE NOUS </p><br>
+        <label>L’Institut Supérieur de Commerce de Goma est un établissement public d’enseignement supérieur.<br>
+            Il a été créé comme extension de <b>l’ISC-Kisangani</b> par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0059/92</b> du 10 mars 1992 portant création des extensions des établissements 
+            de l’enseignement supérieur et universitaire.<br>
+            Cette décision a été prise dans le cadre de la politique d’essaimage des établissements 
+            de l’ESU préconisé par la conférence nationale souveraine. 
+            <br>Les cours ont commencé en 1993 sous la direction du Professeur 
+            <b>RURIHO KIBAMBASI Freddy</b> d’abord, et l’ASS. <b>KALIMUMBALU</b> ensuite, 
+            <b>le 30/04/1994.</b> <br>L’ISC-Goma est devenu autonome par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0584/94.</b>
+                       </label> <br>
+    </div>
+
+    <div class="footerCont">
+        <p>NOS SERVICES </p><hr>
+        <ul>
+            <li>Secrétaire Général Académique</li><hr>
+            <li>LABO INFO</li><hr>
+            <li>APPARITORAT</li><hr>
+        </ul>
+    </div>
+
+    <div class="footerCont">
+        <p>CONTACTEZ-NOUS</p>
+        <label>140, Av.Les écoles, Les Volcans, Nord-Kivu/RDC</label><br>
+        <label>Tél</label><br>
+        <label>Tél</label><br>
+        <label><a href="www.iscgoma.net">www.iscgoma.net</a></label><br>
+    </div> 
+</footer>
+</html>

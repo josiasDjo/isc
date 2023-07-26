@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="connexion.css"/>
+    <title>ISC GOMA</title>
+</head>
+<body>
+    <header>
+        
+        <div id="div1">
+            <img class="logo1" src="Photo/Untitled-1.png" >
+            <p class="grosTitre">ISC GOMA</p>
+            <label for="menubar" onclick="myFunction()"><img src="Photo/list.png" width="50px " height="50px"></label>
+            <input id="menubar" type="checkbox">
+        </div>
+        
+        <nav class="navbar" id="test1">
+
+            <ul class="listBarre" id="listBar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">INSTITUTION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="#">Organisation de l'ISC</a></li>
+                        <li><a href="histo.html">Historique</a></li>
+                        <li><a href="#">Galerie</a></li><br>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FORMATION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="detail.html">Nos filières LMD</a></li>
+                        <li><a href="detailAcSy.html">Nos filières Ancien système</a></li>
+                        <li><a href="inscription.html">Inscription en ligne</li>
+                        <li><a href="connexion.html">Connexion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a>
+                    <ul>
+                        <li><a href="#">A PROPOS DE NOUS</a></li>
+                        <li><a href="about.html">REALISATEUR</a></li>
+                    </ul>
+                </li>
+            </ul>        
+        </nav>
+        </nav>
+    </header>
+    <div id="entete">
+        <p>Connexion Etudiant</p>
+    </div>
+
+    <div id="connect">
+        <div><label for="matricule">Matricule</label></div>
+        <div>
+            <input name="matricule" type="text" placeholder="Student Roll Number">
+        </div>
+        <div><label for="passe">Mot de passe</label></div>
+        <div>
+            <input name="passe" type="password" placeholder="Password"/>
+        </div>
+        
+        <button onclick="valider();">Se connecter</button>
+    </div>
+    <div id="bat">
+        <p><a href="inscription.html">Créer un compte</a></p>
+        <p><a href="#">Mot de passe oublié </a></p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test1");
+            if (x.className === "navbar") {
+                x.className += "responsive";
+            } else {
+                x.className = "navbar"; 
+            }
+        }
+        function valider() {
+            alert("Veillez patientez pendant que nous examinons votre compte étudiant")
+        }
+    </script> 
+</body>
+<footer>
+    <div class="footerCont">
+        <p>A PROPOS DE NOUS </p><br>
+        <label>L’Institut Supérieur de Commerce de Goma est un établissement public d’enseignement supérieur.<br>
+            Il a été créé comme extension de <b>l’ISC-Kisangani</b> par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0059/92</b> du 10 mars 1992 portant création des extensions des établissements 
+            de l’enseignement supérieur et universitaire.<br>
+            Cette décision a été prise dans le cadre de la politique d’essaimage des établissements 
+            de l’ESU préconisé par la conférence nationale souveraine. 
+            <br>Les cours ont commencé en 1993 sous la direction du Professeur 
+            <b>RURIHO KIBAMBASI Freddy</b> d’abord, et l’ASS. <b>KALIMUMBALU</b> ensuite, 
+            <b>le 30/04/1994.</b> <br>L’ISC-Goma est devenu autonome par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0584/94.</b>
+                       </label> <br>
+    </div>
+
+    <div class="footerCont">
+        <p>NOS SERVICES </p><hr>
+        <ul>
+            <li>Secrétaire Général Académique</li><hr>
+            <li>LABO INFO</li><hr>
+            <li>APPARITORAT</li><hr>
+        </ul>
+    </div>
+
+    <div class="footerCont">
+        <p>CONTACTEZ-NOUS</p>
+        <label>140, Av.Les écoles, Les Volcans, Nord-Kivu/RDC</label><br>
+        <label>Tél</label><br>
+        <label>Tél</label><br>
+        <label>E-mails</label><br>
+    </div>
+    
+</footer>
+</html>

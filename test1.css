@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: arial, sans-serif;
+}
+body {
+    line-height: 22px;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background-color: beige;
+}
+.div1 {
+    width: 100%;
+    background-color: rgb(174, 129, 129);
+    position: relative;
+    margin:0 auto;
+    text-align: center;
+}
+.Nav {
+    flex-direction: row;
+}
+header  li {
+    padding: 20px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+header  li a {
+    display: block;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+}
+header  li a:hover {
+    border-bottom: 5px solid skyblue;
+}
+header li:hover #submenu {
+    display: block;
+    background-color: rgb(182, 179, 179);
+    border-radius: 10px solid;
+}
+#submenu {
+   display: none;
+   position: absolute;
+}
+button {
+    width: 100px;
+    height: 50px;
+    display: none;
+    position: relative;
+}
+button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 1120px) {
+    .Nav {
+        /* width: 30%;
+        right: 20px;
+        top: 20px;
+        position: absolute; */
+        display: none;
+    }
+    button {
+        display: block;
+        position: absolute;
+    }
+    .Navresponsive {
+        width: 50%;
+        right: 20px;
+        top: 20px;
+        backdrop-filter: blur(10px);
+        border: 2px #333 solid;
+        position: absolute;
+    }
+    .Navresponsive li:hover #submenu {
+            display: list-item;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            background-color: rgb(182, 179, 179);
+            border-radius: 10px solid;
+            right: 100%;
+            position: absolute;
+        
+    }
+}

@@ -1,0 +1,13 @@
+.container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.mainP {
+    width: 25%;
+    padding: 20px;
+}
+body {
+    /* flex-flow: wrap; */
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Photo/Untitled-1.ico"/>
+    <link rel="stylesheet" href="about.css"/>
+    <title>ISC GOMA</title>
+</head>
+<body>
+    <header>
+        
+        <div id="div1">
+            <img class="logo1" src="Photo/Untitled-1.png" >
+            <p class="grosTitre">ISC GOMA</p>
+            <label for="menubar" onclick="myFunction()"><img src="Photo/list.png" width="50px " height="50px"></label>
+            <input id="menubar" type="checkbox">
+        </div>
+        
+        <nav class="navbar" id="test1">
+
+            <ul class="listBarre" id="listBar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">INSTITUTION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="organisation.html">Organisation de l'ISC</a></li>
+                        <li><a href="histo.html">Historique</a></li>
+                        <li><a href="#">Galerie</a></li><br>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FORMATION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="detail.html">Nos filières LMD</a></li>
+                        <li><a href="detailAcSy.html">Nos filières Ancien système</a></li>
+                        <li><a href="inscription.html">Inscription en ligne</li>
+                        <li><a href="connexion.html">Connexion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a>
+                    <ul>
+                        <li><a href="#">A PROPOS DE NOUS</a></li>
+                        <li><a href="about.html">REALISATEUR</a></li>
+                    </ul>
+                </li>
+            </ul>        
+        </nav>
+        </nav>
+    </header>
+
+    <div class="partici">
+        <div class="tof">
+            <img src="Photo/programmeurs/Vladimir.jpg" alt="BALIYO KATANA MOÏSE" width="500px"  name="tof1">
+            <p for="tof1">BALIYO KATANA MOÏSE</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/Bao.jpg" alt="BAOMBOLIA LOKANGU LYDIE" width="500px" name="tof2">
+            <p for="tof2">BAOMBOLIA LOKANGU LYDIE</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/Dorcas.jpg" alt="BATUBOLIRE KATAALA DORCAS" width="500px" name="tof3">
+            <p for="tof3">BATUBOLIRE KATAALA DORCAS</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/masomi.jpg" alt="BAZIKITA MASOMI PRISCILE" width="500px" name="tof4">
+            <p for="tof4">BAZIKITA MASOMI PRISCILE</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/MHS.jpeg" alt="BEIZA SONGAKI MOISE" width="500px" name="tof5">
+            <p for="tof5">BEIZA SONGAKI MOISE</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/Besodia Josias.png" alt="BESODIA KABAMBI JOSIAS" width="500px" name="tof6">
+            <p for="tof6">BESODIA KABAMBI JOSIAS</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/GREG.jpg" alt="BANZA MALOBA GREGOIRE" width="500px" name="tof7">
+            <p for="tof7">BANZA MALOBA GREGOIRE</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/Pela.jpg" alt="BIGIRIMANA BARAKA PELAGIE" width="500px" name="tof9">
+            <p for="tof9">BIGIRIMANA BARAKA PELAGIE</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/BARAKA.jpg" alt="BARAKA BUJAKERA PATRICK" width="500px" name="tof10">
+            <p for="tof10">BARAKA BUJAKERA PATRICK</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/Jospin.jpg" alt="BAUMA SHINDANI JOSPIN" width="500px" name="tof8">
+            <p for="tof8">BAUMA SHINDANI JOSPIN</p>
+        </div>
+        <div class="tof">
+            <img src="Photo/programmeurs/beka.jpg" alt="BEKA NGEMBA CHADRACK" width="500px" name="tof8">
+            <p for="tof8">BEKA NGEMBA CHADRACK</p>
+        </div>
+
+    </div>
+
+    <div class="motEqui">
+        <h3>Qui sommes-nous ?</h3>
+
+        <p>Nous sommes les Étudiants de la première promotion de licence en <i>systèmes informatiques/réseaux 
+            et télécommunications</i> au sein de  L'ISIG-GOMA, pour l'année académique 2022-2023.
+        <br><br>
+        Ce travail nous a été donné par l'assistant <b>BARAKA Espoir</b> afin de nous promouvoir à la 
+        programmation de siteweb, aussi tester nos connaissances à ce cours de programmation web qu'il 
+        nous a dispensé.
+        <br><br>
+        L'existence de <b>l'ISC-GOMA</b> est bien réelle, d'ailleurs il est du  voisinage de quelques mettres avec <b>L'ISIG-GOMA.</b>
+        Par la même occasion, nous vous invitons de venir fréquenter l'une de ces universités.<br>
+        <br><br>
+        Votre avis (conseil, avertissement, suggestion, correction)
+        et votre collaboration avec nous sont les bienvenus.
+        <br>
+        Un grand merci à vous pour avoir visualisé ces pages web.
+        </p>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test1");
+            if (x.className === "navbar") {
+                x.className += "responsive";
+            } else {
+                x.className = "navbar"; 
+            }
+        }
+    </script> 
+</body>
+<footer>
+    <div class="footerCont">
+        <p>A PROPOS DE NOUS </p><br>
+        <label>L’Institut Supérieur de Commerce de Goma est un établissement public d’enseignement supérieur.<br>
+            Il a été créé comme extension de <b>l’ISC-Kisangani</b> par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0059/92</b> du 10 mars 1992 portant création des extensions des établissements 
+            de l’enseignement supérieur et universitaire.<br>
+            Cette décision a été prise dans le cadre de la politique d’essaimage des établissements 
+            de l’ESU préconisé par la conférence nationale souveraine. 
+            <br>Les cours ont commencé en 1993 sous la direction du Professeur 
+            <b>RURIHO KIBAMBASI Freddy</b> d’abord, et l’ASS. <b>KALIMUMBALU</b> ensuite, 
+            <b>le 30/04/1994.</b> <br>L’ISC-Goma est devenu autonome par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0584/94.</b>
+                       </label> <br>
+    </div>
+
+    <div class="footerCont">
+        <p>NOS SERVICES </p><hr>
+        <ul>
+            <li>Secrétaire Général Académique</li><hr>
+            <li>LABO INFO</li><hr>
+            <li>APPARITORAT</li><hr>
+        </ul>
+    </div>
+
+    <div class="footerCont">
+        <p>CONTACTEZ-NOUS</p>
+        <label>140, Av.Les écoles, Les Volcans, Nord-Kivu/RDC</label><br>
+        <label>Tél</label><br>
+        <label>Tél</label><br>
+        <label><a href="www.iscgoma.net">www.iscgoma.net</a></label><br>
+    </div>
+    
+</footer>
+</html>

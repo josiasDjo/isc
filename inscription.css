@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {user-select: none;}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(89, 191, 250);
+}
+header #div1 {
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    margin: auto;
+    position: relative;
+}
+header .logo1 {
+    width: 200px;
+    height: 120px;
+    top: -10px;
+    left: -30px;
+    align-items: left;
+    position: relative;
+}
+header .grosTitre {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 20px;
+    left: 130px;
+    text-align: left;
+    position: absolute;
+}
+header .navbar {
+    position: absolute;
+    right: 15px;
+    top: -25px;
+    padding-top: 50px;
+}
+header .navbar ul {
+    list-style: none;
+}
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bolder;
+    color: #333;
+    display: block;
+}
+header .navbar ul li a:hover {
+    background-color: rgb(89, 191, 250);
+    color: #ffff;
+    border: 3px solid #ffff;
+    border-radius: 15px ;
+}
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 500px;
+    background: #ffff;
+    display: none;
+}
+header .navbar ul li ul li {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border-top: 1px solid rgb(96, 87, 87);
+}
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+header label {
+    right: 30px;
+    top: 30px;
+    display: none;
+    position: absolute;
+}
+#entete {
+    background-color: rgb(88, 87, 87);
+    height: 160px;   
+}
+#entete p {
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+#connect {
+    padding-top: 50px;
+    width: 50%;
+    margin: auto;
+}
+#connect input {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#connect label {
+    font-size: 15px;
+    color: black;
+}
+#connect button {
+    font-size: 20px;
+    padding: 10px 10px  10px  10px;
+    background-color: rgb(0, 162, 255);
+    border-radius: 20px;
+    border: 1px solid rgb(0, 162, 255);
+}
+#connect button:hover {
+    color: rgb(0, 162, 255);
+    background-color: white;
+    border: 1px solid rgb(0, 162, 255);
+    border-radius: 20px;
+}
+#bat {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#bat p {
+    text-decoration: none;
+    color: rgb(0, 162, 255);
+    font-size: 25px;
+}
+#bat p a {
+    color:rgb(0, 162, 255);
+    cursor: pointer;
+}
+#bat p a:hover {
+    border-bottom: 5px;
+    border-color: black;
+}
+
+footer {
+    background-color: rgb(116, 111, 111);
+    width: 100%;
+    height: auto;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+}
+footer .footerCont {
+    padding: 30px;
+    width: 50%;
+}
+footer .footerCont p{
+    font-size: 20px;
+    font-weight: bolder;
+}
+footer .footerCont label {
+    font-size: 15px;
+}
+footer .footerCont ul li {
+    list-style:decimal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+@media screen and (max-width:1010px) {
+    header label {
+        display: initial;
+    }
+    .navbar {
+        position: absolute;
+        margin-top: 100px;
+        top: 100%; left: 0; right:0;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgb(116, 111, 111);
+        display: none;
+    }
+
+    header .navbar ul li a {
+        color: black;
+    }
+    header .navbar ul li ul li {
+        padding-left: 80px;
+    }
+    
+    #menubar {
+        display: block;
+    }
+    .navbar ul li  {
+        width: 100%;
+    }
+    header .navbar ul li ul {
+        position: relative;
+        padding-left: 30px;
+        width: 100%;
+    }
+    #menubar:checked ~ header .navbar {
+        position: relative;
+        top: 100%; left: 0; right:0;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 0, 0, 1);
+        display: initial;    
+    }
+    header #div1 label:hover {
+        cursor: pointer;
+        display: initial;
+    }
+    #connect {
+        padding-top: 50px;
+        width: 90%;
+        margin: auto;
+    }
+    #connect button {
+        font-size: 20px;
+        padding: 10px 10px  10px  10px;
+        background-color: rgb(0, 162, 255);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        margin-left: 42%;
+        border: 1px solid rgb(0, 162, 255);
+    }
+}
+
+@media screen and (max-width:1010px) {
+    header label {
+        display: initial;
+    }
+    .navbar {
+        position: absolute;
+        margin-top: 100px;
+        display: none;
+    }
+    header .navbar ul li a {
+        color: #333;
+    }
+    header .navbar ul li ul li {
+        padding-left: 80px;
+    }
+    #menubar {
+        display: block;
+    }
+    .navbar ul li  {
+        width: 100%;
+    }
+    header .navbar ul li ul {
+        position: relative;
+        padding-left: 30px;
+        width: 100%;
+    }
+    .navbarresponsive {
+        top: 100%; left: 0; right:0;
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(0, 0, 0, 1);
+        width: 100%;
+        right: 15px;
+        backdrop-filter: blur(15px);
+        padding-top: 50px;
+    }
+    .navbarresponsive ul li {
+        color: white;
+    }
+    .navbarresponsive ul li a {
+        font-size: 20px;
+        padding: 20px;
+        font-weight: bolder;
+        color: #333;
+        display: block;
+    }
+    .navbarresponsive ul li a:hover {
+        background-color: rgb(89, 191, 250);
+        color: #ffff;
+        border: 3px solid #ffff;
+        border-radius: 15px ;
+    }
+    .navbarresponsive ul li ul {
+        position: absolute;
+        left: 0;
+        padding-left: 30px;
+        width: 100%;
+        background: #ffff;
+        display: none;
+    }
+    .navbarresponsive ul li ul li {
+        width: 100%;
+        padding: 10px 0 10px 0;
+        border-top: 1px solid rgb(96, 87, 87);
+    }
+    .navbarresponsive ul li:hover > ul {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .grosTitre {
+        display: none;
+    }
+    #connect button {
+        font-size: 20px;
+        padding: 10px 10px  10px  10px;
+        background-color: rgb(0, 162, 255);
+        border-radius: 20px;
+        margin-left: 42%;
+        border: 1px solid rgb(0, 162, 255);
+    }
+}
+@media screen and (max-width: 430px) {
+    #entete {
+        height: 100px;
+    }
+    #entete p {
+        font-size: 30px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        text-align: center;
+        padding-top: 30px;
+    }
+    #bat p {
+        text-decoration: none;
+        color: rgb(0, 162, 255);
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+}

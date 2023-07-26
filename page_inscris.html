@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page_inscris.css" />
+    <title>ISC GOMA</title>
+</head>
+<body>
+    <header>
+        <div id="div1">
+            <img class="logo1" src="Photo/Untitled-1.png" >
+            <p class="grosTitre">ISC GOMA</p>
+            <input type="checkbox" id="menubar"/>
+            <label for="menubar" onclick="myFunction();"><img src="Photo/list.png" width="50px " height="50px"></label>
+        </div>
+        <nav class="navbar" id="test1">
+
+            <ul class="listBarre" id="listBar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">INSTITUTION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="organisation.html">Organisation de l'ISC</a></li>
+                        <li><a href="histo.html">Historique</a></li>
+                        <li><a href="#">Galerie</a></li><br>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">FORMATION +</a>
+                    <ul class="listeBarre">
+                        <li><a href="detail.html">Nos filières LMD</a></li>
+                        <li><a href="detailAcSy.html">Nos filières Ancien système</a></li>
+                        <li><a href="page_inscris.html">Inscription en ligne</li>
+                        <li><a href="connexion.html">Connexion</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT +</a>
+                    <ul>
+                        <li><a href="#">A PROPOS DE NOUS</a></li>
+                        <li><a href="about.html">REALISATEUR</a></li>
+                    </ul>
+                </li>
+            </ul>        
+        </nav>
+    </header>
+
+    <div id="entete">
+        <p>Inscription en ligne nouveau étudiant</p>
+    </div>
+    <div id="formulaire">
+        <input type="text" placeholder="Nom *">
+        <input type="text" placeholder="Postnom *">
+        <input type="text" placeholder="Prenom *">
+        <label for="date">Date de naissance</label>
+        <input type="date" name="date" placeholder="Date de naissance *">
+
+        <label for="genre">Genre</label>
+        <select name="genre">
+            <option>Sexe</option>
+            <option>Masculin</option>
+            <option>Féminin</option>
+        </select>
+        <hr>
+        <input type="tel" placeholder="Téléphone *">
+        <input type="email" placeholder="E-mail *">
+        <hr>
+ 
+        <select name="" id="">
+            <option>Promotion solliciter * </option>
+            <option>Première année de Licence</option>
+            <option>Deuxième année de Licence</option>
+            <option>Troisième année de Licence</option>
+        </select>
+        <select name="" id="">
+            <option value="">Option solliciter * </option>
+            <option value="">Comptabilié</option>
+            <option value="">Marketing</option>
+            <option value="">Micro-finances</option>
+            <option value="">Conception informatique</option>
+            <option value="">Réseaux informatique</option>
+            <option value="">Gestions des Ressources Humaines</option>
+            <option value="">Secrétariat de Direction</option>
+        </select>
+        <hr>
+        <label for="inputFile">Formulaire d'inscription completé
+            (image:jpg, png, gif) *
+        </label>
+        <input class="inputFile" type="file">
+        <button onclick="verifier();">ENVOYER MON DOSSIER</button>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("test1");
+            if (x.className === "navbar") {
+                x.className += "responsive";
+            } else {
+                x.className = "navbar"; 
+            }
+        }
+        function verifier() {
+            alert ("Nous vous enverrons un email de confirmation ! ")
+        }
+    </script> 
+</body>
+<footer>
+    <div class="footerCont">
+        <p>A PROPOS DE NOUS </p><br>
+        <label>L’Institut Supérieur de Commerce de Goma est un établissement public d’enseignement supérieur.<br>
+            Il a été créé comme extension de <b>l’ISC-Kisangani</b> par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0059/92</b> du 10 mars 1992 portant création des extensions des établissements 
+            de l’enseignement supérieur et universitaire.<br>
+            Cette décision a été prise dans le cadre de la politique d’essaimage des établissements 
+            de l’ESU préconisé par la conférence nationale souveraine. 
+            <br>Les cours ont commencé en 1993 sous la direction du Professeur 
+            <b>RURIHO KIBAMBASI Freddy</b> d’abord, et l’ASS. <b>KALIMUMBALU</b> ensuite, 
+            <b>le 30/04/1994.</b> <br>L’ISC-Goma est devenu autonome par l’arrêté ministériel 
+            <b>N° ESU/CABMIN/0584/94.</b>
+                       </label> <br>
+    </div>
+
+    <div class="footerCont">
+        <p>NOS SERVICES </p><hr>
+        <ul>
+            <li>Secrétaire Général Académique</li><hr>
+            <li>LABO INFO</li><hr>
+            <li>APPARITORAT</li><hr>
+        </ul>
+    </div>
+
+    <div class="footerCont">
+        <p>CONTACTEZ-NOUS</p>
+        <label>140, Av.Les écoles, Les Volcans, Nord-Kivu/RDC</label><br>
+        <label>Tél</label><br>
+        <label>Tél</label><br>
+        <label>E-mails</label><br>
+    </div>
+    
+</footer>
+</html>
